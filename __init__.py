@@ -14,17 +14,20 @@ import json
 from .cvAPI import getDetail, getObjLabel
 
 LOGSTR = '********************====================########## '
+
+# mycroft-msm install https://github.com/ISA-SRBP/easy-shopping-skill.git
+
 # 'NO TEST': use the image taken by the camera
 # 'TEST': use the image in /photo folder, 
 # In both mode, camera will work normally, i.e. take the photo, save the photo
-# MODE = 'NO TEST'
+# MODE = 'PROD'
 MODE = 'TEST'
 # need to be changed
-IMAGE_STORE_PATH = '/opt/mycroft/skills/easy-shopping-skill/photo/'
+IMAGE_STORE_PATH = '/home/ai-user/mycroft-core/skills/easy-shopping-skill.isa-srbp/photo/'
 # need to be changed
-TEST_IMAGE_PATH_MULTI = '/opt/mycroft/skills/easy-shopping-skill/testPhoto/multi.jpeg'
+TEST_IMAGE_PATH_MULTI = '/home/ai-user/mycroft-core/skills/easy-shopping-skill.isa-srbp/testPhoto/multi.jpeg'
 # need to be changed
-TEST_IMAGE_PATH_HAND = '/opt/mycroft/skills/easy-shopping-skill/testPhoto/2.jpeg'
+TEST_IMAGE_PATH_HAND = '/home/ai-user/mycroft-core/skills/easy-shopping-skill.isa-srbp/testPhoto/2.jpeg'
 
 def take_photo(img_queue):
     '''
